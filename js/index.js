@@ -1,8 +1,14 @@
 (function($){
 
     // 로드 이벤트
-    $('#container > #content').load('main.html');
-    $('body').on('click','#header>h1>a, #header .navBar a, #header .loginMenu a, #content .slide a, .article2 a', function(e){
+    $('body').on('click', '#header .navBar a, #header .loginMenu a, #content .slide a, .article2 a', function(e){
+        e.preventDefault();
+        var url = $(this).attr('href');
+        $('#container > #content').remove();
+        $('#container').load(url+' #content');
+    })
+
+    $('#header .navBar ul li a').on('click',function(e){
         e.preventDefault();
         var url = $(this).attr('href');
         $('#container > #content').remove();
