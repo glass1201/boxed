@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* body {font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;} */
+
+.row { max-width:1800px; margin:0 auto}
+.topNavWrap {
+    width:100%; 
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px; font-weight:300;
+    background:#fff;
+    position:fixed;  left:0; right:0;
+    z-index:99999999;
+
+}
+.topNavWrap h1 { font-weight:900; font-size:33px; 
+     }
+.topNav { display:flex; height:85px;
+    padding:15px 0
+}
+.topNavlogo,  .navBar, .loginMenu { align-self: center;}
+.topNavlogo { width:15%; }
+.navBar { width:65%; }
+.loginMenu { width:20%; text-align: right;
+    padding-right:30px;
+}
+.topNav ul li a { display:block; padding: 11px 15px;
+    transition:all 0.3s;
+}
+.topNav ul li:hover a { color:#32b67a;}
+.navBar ul li { display:inline-block; }
+.loginMenu ul li{ display:inline-block}
