@@ -62,6 +62,15 @@
         $('.video-inner iframe').attr('src','')
     })
 
+    // about.html
+    $('body').on('click','.about-list ul li a',function(e){
+        e.preventDefault();
+        var index = $(this).parent().index();
+        $(this).parent().addClass('on').siblings().removeClass('on');
+        $('.about-info > div').eq(index).show().siblings().hide()
+
+    })
+
 
 
 

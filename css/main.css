@@ -128,9 +128,19 @@
 }
 .article2 h3 { font-size:40px; font-weight:700; }
 .article2 .box6 p {
-    position: relative; top:50%; left:0;
+    position: relative; top:45%; left:0;
     transform:translateY(-50%);
+    font-size:70px
 }
+.article2 .box6 a { position: relative; top:40%; left:0;
+    transform:translateY(-50%);
+    font-size:18px; padding:20px 35px;
+    background:#eee; color:#333;
+    font-weight: normal;
+    border-radius: 10px;
+    transition:all 0.3s
+ }
+ .article2 .box6 a:hover { background:#32b67a; color:#fff;}
 
 /* article3 */
 /*백그라운드 컬러*/
