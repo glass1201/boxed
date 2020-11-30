@@ -37,6 +37,7 @@
 
 .history-wrap { padding:120px 0;
     position: relative;
+    display:none;
 }
 .history:before {
     content:''; display:block;
