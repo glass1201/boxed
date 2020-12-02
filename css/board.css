@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+.boardContent { padding-top:85px;}
+.board-topbg { background:url(../images/board_top_bg.png) no-repeat;
+    background-size:cover; background-position:center;
+    height:500px; position: relative;
+}
+.board-topbg h2 { font-size:60px; z-index:9999; color:#000;
+    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+.board-bg-overlay { position: absolute; width:100%; height:500px;
+    background:#fff; opacity: 0.3;
+}

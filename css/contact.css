@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+
+.contactContent { padding-top:85px;}
+
+.contact-topbg { background:url(../images/contact_top_bg.png) no-repeat;
+    background-size:cover; background-position: center;
+    height:500px; position: relative;
+}
+.contact-topbg h2 { font-size:60px; z-index:9999; color:#000;
+    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-bg-overlay { position: absolute; width:100%; height:500px;
+    background:#fff; opacity: 0.5;
+}

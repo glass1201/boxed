@@ -2,7 +2,7 @@
 
 .aboutContent { padding-top:85px;}
 
-.about-topbg { background:url(../images/about.png) no-repeat;
+.about-topbg { background:url(../images/about_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
     height:500px; position: relative;
 }
@@ -35,10 +35,11 @@
 .intro-txt h3 { font-size:44px; padding-bottom:30px; }
 .intro-txt p { font-size:22px; color:#666}
 
-.history-wrap { padding:120px 0;
+.history-wrap { background:#32b67a;
     position: relative;
     display:none;
 }
+.history { padding:120px 0; background:#fff;}
 .history:before {
     content:''; display:block;
     position: absolute;
