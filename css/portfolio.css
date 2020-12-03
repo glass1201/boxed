@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.portfolioContent { padding-top:85px;}
+.portfolioContent { padding-top:85px; font-family: 'Roboto', sans-serif;}
 
 .pf-topbg { background:url(../images/portfolio_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
@@ -13,3 +13,63 @@
 .pf-bg-overlay { position: absolute; width:100%; height:500px;
     background:#fff; opacity: 0.6;
 }
+
+.pf-list-section { padding:100px 0 ; display:flex; flex-wrap:wrap;
+    justify-content: center;
+}
+.pf-list-section > div { width: 40%; margin:5%;}
+.pf-list-section img { border-radius:15px; border:2px solid #ddd}
+
+.pf-overlay-wrap { position: relative;  }
+.pf-overlay { position: absolute; top:0; left:0; bottom:0; right:0;
+     background:rgba(0,0,0,0.5);
+     border-radius:15px;
+     overflow: hidden; 
+     opacity:0;
+     transition: all 0.5s;
+}
+.pf-overlay i { font-size:200px; color:rgba(255,255,255,0.5);
+    position: absolute; left:-160px; bottom:-35px;
+    transition: all 0.7s;
+}
+.pf-overlay-wrap:hover .pf-overlay { opacity: 1;}
+.pf-overlay-wrap:hover i {
+    position: absolute; left:300px;
+}
+.pf-txt { margin-left: 8px;}
+.pf-txt h2 { font-size:20px; font-weight:500;
+    color:#222;
+    padding:25px 0 15px;}
+.pf-txt span { font-size: 18px; font-family: 'Noto Sans KR', sans-serif;
+    padding-left:5px; 
+}
+.pf-txt p { font-size:17px; color:#555;}
+.pf-txt p+p { padding-top:10px;}
+.pf-txt p:last-child { line-height:1.7; }
+
+.color { display:flex; padding:10px 0 }
+.color div:nth-child(1) { font-size:17px; color:#555;
+    margin-right:9px;
+}
+.color div:nth-child(2), .color div:nth-child(3), .color div:nth-child(4) { 
+    width:20px; height:20px;
+    margin-right:9px; border:1.5px solid #000;
+}
+.color01 div:nth-child(2) { background:#32b67a}
+.color01 div:nth-child(3) { background:#122947}
+.color01 div:nth-child(4) { background:#ddd}
+
+.color02 div:nth-child(2) { background:#194c96;}
+.color02 div:nth-child(3) { background:#fff38d}
+.color02 div:nth-child(4) { background:#9dd9ff}
+
+.color03 div:nth-child(2) { background:#b32025;}
+.color03 div:nth-child(3) { background:#ffbc0d;}
+
+.color04 div:nth-child(2) { background:#039fea;}
+.color04 div:nth-child(3) { background:#ff79c8;}
+.color04 div:nth-child(4) { background:#0d50aa;}
+
+.color05 div:nth-child(2) { background:#000;}
+.color05 div:nth-child(3) { background:#fff;}
+.color05 div:nth-child(4) { background:#fedb3c;}
