@@ -1,10 +1,139 @@
-
-<section id="container">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxed</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700;800;900&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="topNavWrap">
+                <div class="topNav row">
+                    <div class="topNavlogo">
+                        <h1><a href="index.html">
+                            BOXED
+                        </a></h1>
+                    </div>
+                    <div class="navBar">
+                        <ul>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="skills.html">SKILLS</a></li>
+                            <li><a href="board.html">BOARD</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="loginMenu">
+                        <ul>
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li><a href="join.html">JOIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="container">
     
-    <div id="content" class="skillsContent">
-        <div class="skills-topbg">
-            <div class="skills-bg-overlay"></div>
-            <h2>SKILLS</h2>
-        </div>
+            <div id="content" class="skillsContent">
+                <div class="skills-topbg">
+                    <div class="skills-bg-overlay"></div>
+                    <h2>SKILLS</h2>
+                </div>
+                <div class="skills-row row">
+                    <div class="skills-row2 row2">
+                        <div class="skills-wrap row3">
+                            <div class="pie-chart pie-chart1"><span class="center">
+                                <p>90%</p>
+                                <p>HTML</p>
+                            </span></div>
+                            <div class="pie-chart pie-chart2"><span class="center">
+                                <p>80%</p>
+                                <p>CSS</p>
+                            </span></div>
+                            <div class="pie-chart pie-chart3"><span class="center">
+                                <p>60%</p>
+                                <p>JQuery</p>
+                            </span></div>
+                            <div class="pie-chart pie-chart4"><span class="center">
+                                <p>50%</p>
+                                <p>JavaScript</p>
+                            </span></div>
+                            <div class="pie-chart pie-chart5"><span class="center">
+                                <p>40%</p>
+                                <p>REACT</p>
+                            </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            
+        </section>
+
+        <footer id="footer">
+            <div class="footer-info">
+                <p>&copy;All Rights Reserved by <span>design yami</span></p>
+            </div>
+        </footer>
     </div>
-</section>
+
+
+
+    <script src="js/index.js"></script>
+    <script>
+        // 차트
+        $(window).ready(function(){
+            draw(90, '.pie-chart1', '#999');
+            draw(80, '.pie-chart2', '#777');
+            draw(60, '.pie-chart3', '#555');
+            draw(50, '.pie-chart4', '#333');
+            draw(40, '.pie-chart5', '#000');
+        });
+    
+        function draw(max, classname, colorname){
+            var i = 1;
+            var func1 = setInterval(function(){
+                if ( i<max ){
+                    color1(i, classname, colorname);
+                    i++;
+                } else {
+                    clearInterval(func1);
+                }
+            },10);
+        }
+    
+        function color1(i, classname,colorname){
+        $(classname).css({
+        "background":"conic-gradient("+colorname+" 0% "+i+"%, #ffffff "+i+"% 100%)"
+   });
+}
+    
+    </script>
+</body>
+
+
+</html>
+

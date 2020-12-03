@@ -1,14 +1,14 @@
 (function($){
 
     // 로드 이벤트
-    $('body').on('click', '#header .navBar a, #header .loginMenu a, #content .slide a, .article2 a', function(e){
+    $('body').on('click','#header .loginMenu a, #content .slide a, .article2 a', function(e){
         e.preventDefault();
         var url = $(this).attr('href');
         $('#container > #content').remove();
         $('#container').load(url+' #content');
     })
 
-    $('#header .navBar ul li a').on('click',function(e){
+    $('#header .navBar ul li:nth-child(1) a, #header .navBar ul li:nth-child(2) a, #header .navBar ul li:nth-child(4) a,#header .navBar ul li:nth-child(5) a').on('click',function(e){
         e.preventDefault();
         var url = $(this).attr('href');
         $('#container > #content').remove();
@@ -70,6 +70,10 @@
         $('.about-info > div').eq(index).show().siblings().hide()
 
     })
+
+
+    
+
 
 
 
