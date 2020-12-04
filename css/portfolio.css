@@ -24,7 +24,9 @@
     justify-content: center;
 }
 .pf-list-section > div { width: 42%; margin:3%;}
-.pf-list-section img { border-radius:15px; border:2px solid #ddd}
+.pf-list-section img { border-radius:15px; border:2px solid #ddd;
+    height:300px;
+}
 
 .pf-overlay-wrap { position: relative;  }
 .pf-overlay { position: absolute; top:0; left:0; bottom:0; right:0;
