@@ -15,6 +15,8 @@
         $('#container').load(url+' #content');
     })
 
+    // nav 클릭 이벤트
+    
     $(".slide-inner").slick({            
 
         autoplay: true, // 자동재생

@@ -27,8 +27,10 @@
     font-weight:bold;
 }
 
-.intro-wrap { padding:130px 0; }
-.intro { display:flex;  flex-wrap: wrap; justify-content: center;}
+.intro-wrap {background:#eee;}
+.intro { display:flex;  flex-wrap: wrap; justify-content: center;
+    padding:130px 0; background:#fff
+}
 .intro > div { width:40%; }
 .intro img { width:100%; }
 .intro-txt { margin:auto 0px; padding:0 20px }

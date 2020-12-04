@@ -65,23 +65,23 @@
                     <div class="skills-row2 row2">
                         <div class="skills-wrap row3">
                             <div class="pie-chart pie-chart1"><span class="center">
-                                <p>90%</p>
+                                <p class="number">90%</p>
                                 <p>HTML</p>
                             </span></div>
                             <div class="pie-chart pie-chart2"><span class="center">
-                                <p>80%</p>
+                                <p class="number">80%</p>
                                 <p>CSS</p>
                             </span></div>
                             <div class="pie-chart pie-chart3"><span class="center">
-                                <p>60%</p>
+                                <p class="number">60%</p>
                                 <p>JQuery</p>
                             </span></div>
                             <div class="pie-chart pie-chart4"><span class="center">
-                                <p>50%</p>
+                                <p class="number">50%</p>
                                 <p>JavaScript</p>
                             </span></div>
                             <div class="pie-chart pie-chart5"><span class="center">
-                                <p>40%</p>
+                                <p class="number">40%</p>
                                 <p>REACT</p>
                             </span></div>
                         </div>
@@ -122,14 +122,70 @@
                 } else {
                     clearInterval(func1);
                 }
-            },10);
+            },40);
+
+            // 퍼센트 카운팅
+            var cnt0 = cnt1 = cnt2 = cnt3 = cnt4 = cnt5 = 0;
+            counterFn();
+            function counterFn(){
+
+                id0 = setInterval(count0Fn, 40);
+                function count0Fn(){
+                    cnt0++;
+                    if (cnt0 > 90){
+                        clearInterval(id0);
+                    } else {
+                        $('.number').eq(0).text(cnt0);
+                    }
+                }
+                id1 = setInterval(count1Fn, 40);
+                function count1Fn(){
+                    cnt1++;
+                    if (cnt1 > 80){
+                        clearInterval(id1);
+                    } else {
+                        $('.number').eq(1).text(cnt1);
+                    }
+                }
+                id2 = setInterval(count2Fn, 40);
+                function count2Fn(){
+                    cnt2++;
+                    if (cnt2 > 60){
+                        clearInterval(id2);
+                    } else {
+                        $('.number').eq(2).text(cnt2);
+                    }
+                }
+                id3 = setInterval(count3Fn, 40);
+                function count3Fn(){
+                    cnt3++;
+                    if (cnt3 > 50){
+                        clearInterval(id3);
+                    } else {
+                        $('.number').eq(3).text(cnt3);
+                    }
+                }
+                id4 = setInterval(count4Fn, 30);
+                function count4Fn(){
+                    cnt4++;
+                    if (cnt4 > 40){
+                        clearInterval(id4);
+                    } else {
+                        $('.number').eq(4).text(cnt4);
+                    }
+                }
+
+            }
+
         }
     
         function color1(i, classname,colorname){
         $(classname).css({
         "background":"conic-gradient("+colorname+" 0% "+i+"%, #ffffff "+i+"% 100%)"
-   });
-}
+        });
+        }
+
+        
     
     </script>
 </body>

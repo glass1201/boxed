@@ -13,8 +13,11 @@
 .pf-bg-overlay { position: absolute; width:100%; height:500px;
     background:#fff; opacity: 0.6;
 }
-.pf-wrap > p { text-align: center;
-    color:#ccc; padding-top:65px;
+
+.pf-wrap { background:#eee }
+.pf { background:#fff; }
+.pf > p { text-align: center;
+    color:#aaa; padding-top:65px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .pf-list-section { padding:50px 0 100px; display:flex; flex-wrap:wrap;
