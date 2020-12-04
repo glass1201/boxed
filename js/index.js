@@ -15,7 +15,12 @@
         $('#container').load(url+' #content');
     })
 
-    // nav 클릭 이벤트
+    $('.topNav ul li ').on('click',function(){
+        $(this).addClass('on').siblings().removeClass('on')
+    })
+
+
+   
     
     $(".slide-inner").slick({            
 
