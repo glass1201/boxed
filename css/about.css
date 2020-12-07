@@ -35,7 +35,20 @@
 .intro img { width:100%; }
 .intro-txt { margin:auto 0px; padding:0 20px }
 .intro-txt h3 { font-size:44px; padding-bottom:30px; }
-.intro-txt p { font-size:22px; color:#666}
+.intro-txt02 p { font-size:22px; color:#666}
+
+/*타이핑*/
+.typing-txt { display:none }
+.typing { display:inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+@keyframes cursor{
+    0% { border-right:2px solid #fff}
+    50% { border-right:2px solid #000}
+    100% { border-right:2px solid #fff; }
+}
 
 .history-wrap { background:#32b67a;
     position: relative;
