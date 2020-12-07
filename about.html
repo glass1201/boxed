@@ -75,7 +75,10 @@
                         <div class="intro row2">
                             <div class="intro-txt">
                                 <h3 class="typing-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                                <h3 class="typing"></h3>
+                                <h3 class="typing">
+                                    <span></span>
+                                    <p>&nbsp;</p>
+                                </h3>
                             </div>
                             <div class=intro-img><img src="images/about_img01.png" alt=""></div>
                             <div class="intro-img"><img src="images/about_img02.png" alt=""></div>
@@ -190,7 +193,7 @@
 
     function typing(){
         if(typingIdx < typingTxt.length){
-            $('.typing').append(typingTxt[typingIdx]);
+            $('.typing span').append(typingTxt[typingIdx]);
             typingIdx++;
         } else {
             clearInterval(tyInt);

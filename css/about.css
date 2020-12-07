@@ -27,9 +27,9 @@
     font-weight:bold;
 }
 
-.intro-wrap {background:#eee;}
+
 .intro { display:flex;  flex-wrap: wrap; justify-content: center;
-    padding:130px 0; background:#fff
+    padding:130px 0;
 }
 .intro > div { width:40%; }
 .intro img { width:100%; }
@@ -41,7 +41,7 @@
 
 /*타이핑*/
 .typing-txt { display:none }
-.typing { display:inline-block;
+.typing p { display:inline-block;
     animation-name: cursor;
     animation-duration: 0.3s;
     animation-iteration-count: infinite;
