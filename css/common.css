@@ -30,7 +30,7 @@
     font-weight: normal; margin-top:4px;
     padding-left:20px;
 }
-.navBar { width:65%; }
+.navBar { width:65%; padding-left:30px;}
 .loginMenu { width:15%; text-align: right;
     
 }
