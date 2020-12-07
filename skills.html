@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -32,7 +33,7 @@
                 <div class="topNav row">
                     <div class="topNavlogo">
                         <h1><a href="index.html">
-                            ONON
+                            ONONON
                         </a></h1>
                     </div>
                     <div class="navBar">
@@ -119,64 +120,15 @@
                 if ( i<max ){
                     color1(i, classname, colorname);
                     i++;
+                    countFn(i, classname);
                 } else {
                     clearInterval(func1);
                 }
             },40);
+        }
 
-            // 퍼센트 카운팅
-            var cnt0 = cnt1 = cnt2 = cnt3 = cnt4 = cnt5 = 0;
-            counterFn();
-            function counterFn(){
-
-                id0 = setInterval(count0Fn, 40);
-                function count0Fn(){
-                    cnt0++;
-                    if (cnt0 > 90){
-                        clearInterval(id0);
-                    } else {
-                        $('.number').eq(0).text(cnt0);
-                    }
-                }
-                id1 = setInterval(count1Fn, 40);
-                function count1Fn(){
-                    cnt1++;
-                    if (cnt1 > 80){
-                        clearInterval(id1);
-                    } else {
-                        $('.number').eq(1).text(cnt1);
-                    }
-                }
-                id2 = setInterval(count2Fn, 40);
-                function count2Fn(){
-                    cnt2++;
-                    if (cnt2 > 60){
-                        clearInterval(id2);
-                    } else {
-                        $('.number').eq(2).text(cnt2);
-                    }
-                }
-                id3 = setInterval(count3Fn, 40);
-                function count3Fn(){
-                    cnt3++;
-                    if (cnt3 > 50){
-                        clearInterval(id3);
-                    } else {
-                        $('.number').eq(3).text(cnt3);
-                    }
-                }
-                id4 = setInterval(count4Fn, 30);
-                function count4Fn(){
-                    cnt4++;
-                    if (cnt4 > 40){
-                        clearInterval(id4);
-                    } else {
-                        $('.number').eq(4).text(cnt4);
-                    }
-                }
-
-            }
-
+        function countFn(i, classname){
+            $(classname).find('.number').text(i+'%');
         }
     
         function color1(i, classname,colorname){

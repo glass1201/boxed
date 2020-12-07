@@ -4,11 +4,13 @@
 
 (function($){
 
+
     // li 메뉴 클릭하면 색상 변경
     $('.topNav ul li ').on('click',function(){
         $(this).addClass('on').siblings().removeClass('on')
     })
 
+    
     // 비디오 슬라이드에 현재날짜, 시간 표시하기
 
     setInterval(function(){
@@ -35,15 +37,45 @@
         if(seconds<10){
             seconds='0'+seconds
         }
-        var today = yyyy+'/'+mm+'/'+dd;
-        var todayHours = hours+':'+minutes+':'+seconds;
-        var elVideo = document.querySelector('.video-txt p:first-child');
+        var today = yyyy+ ' / '+mm+ ' / '+dd;
+        var todayHours = hours+' : '+minutes+' : '+seconds;
+        var elVideo = document.querySelector('.video-txt p:nth-child(2)');
         var elVideo2 = document.querySelector('.video-txt p:last-child');
         elVideo.innerText = today;
         elVideo2.innerText = todayHours;
     },1000)
     
-    
+    // 애니메이션
+    var sct = $(this).scrollTop();
+
+    if ( sct === 0 ) {
+        $('.main-slide-wrap').addClass('on')
+    } 
+    $(window).scroll(function(){
+        var sct = $(this).scrollTop();
+
+        var art1Near = $('.article1-img').offset().top - $(this).height();
+        if ( sct >= art1Near ){
+            $('.article1-img').addClass('on')
+        } else if ( sct===0 ){
+            $('.article1-img').removeClass('on')
+        }
+
+        var art2Near = $('.article2').offset().top - $(this).height();
+        if ( sct >= art2Near ){
+            $('.article2').addClass('on')
+        } else if ( sct===0 ){
+            $('article2').removeClass('on')
+        }
+
+        var art3Near = $('.article3').offset().top - $(this).height();
+        if (sct >= art3Near ){
+            $('.article3').addClass('on')
+        } else if ( sct === 0 ){
+            $('.article3').removeClass('on')
+        }
+    })
+ 
     // 슬라이드
     $(".slide-inner").slick({            
 
