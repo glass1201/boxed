@@ -74,7 +74,7 @@
                     <div class="intro-wrap">
                         <div class="intro row2">
                             <div class="intro-txt">
-                                <h3 class="typing-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                                <h3 class="typing-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                                 <h3 class="typing"></h3>
                             </div>
                             <div class=intro-img><img src="images/about_img01.png" alt=""></div>
@@ -167,4 +167,34 @@
 
     <script src="js/index.js"></script>
 </body>
+
+<script>
+    // about.html
+    $('body').on('click','.about-list ul li a',function(e){
+        e.preventDefault();
+        var index = $(this).parent().index();
+        $(this).parent().addClass('on').siblings().removeClass('on');
+        $('.about-info > div').eq(index).show().siblings().hide()
+    })
+
+    // about 타이핑 효과
+
+    var typingBool = false;
+    var typingIdx = 0;
+    var typingTxt = $('.typing-txt').text();
+    typingTxt = typingTxt.split('');
+    if (typingBool == false){
+        typingBool=true;
+        var tyInt = setInterval(typing,100);
+    }
+
+    function typing(){
+        if(typingIdx < typingTxt.length){
+            $('.typing').append(typingTxt[typingIdx]);
+            typingIdx++;
+        } else {
+            clearInterval(tyInt);
+        }
+    }
+</script>
 </html>

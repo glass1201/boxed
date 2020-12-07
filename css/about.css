@@ -45,9 +45,9 @@
     animation-iteration-count: infinite;
 }
 @keyframes cursor{
-    0% { border-right:2px solid #fff}
-    50% { border-right:2px solid #000}
-    100% { border-right:2px solid #fff; }
+    0% { border-right:1px solid #fff}
+    50% { border-right:1px solid #000}
+    100% { border-right:1px solid #fff; }
 }
 
 .history-wrap { background:#32b67a;

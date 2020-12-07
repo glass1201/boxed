@@ -125,33 +125,7 @@
         $('.video-inner iframe').attr('src','')
     })
 
-    // about.html
-    $('body').on('click','.about-list ul li a',function(e){
-        e.preventDefault();
-        var index = $(this).parent().index();
-        $(this).parent().addClass('on').siblings().removeClass('on');
-        $('.about-info > div').eq(index).show().siblings().hide()
-    })
-
-    // about 타이핑 효과
-
-    var typingBool = false;
-    var typingIdx = 0;
-    var typingTxt = $('.typing-txt').text();
-    typingTxt = typingTxt.split('');
-    if (typingBool == false){
-        typingBool=true;
-        var tyInt = setInterval(typing,100);
-    }
-
-    function typing(){
-        if(typingIdx < typingTxt.length){
-            $('.typing').append(typingTxt[typingIdx]);
-            typingIdx++;
-        } else {
-            clearInterval(tyInt);
-        }
-    }
+    
 
 
     
