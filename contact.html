@@ -1,68 +1,136 @@
-
-<section id="container">
-    <div id="content" class="contactContent">
-        <div class="contact-topbg">
-            <div class="contact-bg-overlay"></div>
-            <h2>CONTACT</h2>
-        </div>
-
-        <div class="contact-row row">
-            <div class="contact row2">
-                <form action="#" method="POST">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>구분</td>
-                                <td>
-                                    <select name="category" id="">
-                                        <option value="0">문의</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>성명</td>
-                                <td>
-                                    <input type="text" name="name" class="contact-name">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>전화번호</td>
-                                <td>
-                                    <input type="text" name="tel" class="contact-tel">
-                                    <span>-</span>
-                                    <input type="text" name="tel" class="contact-tel">
-                                    <span>-</span>
-                                    <input type="text" name="tel" class="contact-tel">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>이메일</td>
-                                <td>
-                                    <input type="text" name="email" class="contact-email">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>문의내용</td>
-                                <td>
-                                    <input type="text" name="query" id="contact-query">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>파일첨부</td>
-                                <td>
-                                    <input type="file" name="photo" id="contact-photo">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>
-    
-                <div class="contact-btn">
-                    <button><a href="#">전송</a></button>
-                    <button><a href="#">취소</a></button>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONON-PORTFOLIO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600;700;800;900&family=Roboto:wght@300;400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="topNavWrap">
+                <div class="topNav row">
+                    <div class="topNavlogo">
+                        <h1><a href="index.html">
+                            ONON
+                        </a></h1>
+                    </div>
+                    <div class="navBar">
+                        <ul>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="skills.html">SKILLS</a></li>
+                            <li><a href="board.html">BOARD</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="loginMenu">
+                        <ul>
+                            <li><a href="login.html">LOGIN</a></li>
+                            <li><a href="join.html">JOIN</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
+        
+        <section id="container">
+            <div id="content" class="contactContent">
+                <div class="contact-topbg">
+                    <div class="contact-bg-overlay"></div>
+                    <h2>CONTACT</h2>
+                </div>
+        
+                <div class="contact-row row">
+                    <div class="contact row2">
+                        <form action="#" method="POST">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>구분</td>
+                                        <td>
+                                            <select name="category" id="">
+                                                <option value="0">문의</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>성명</td>
+                                        <td>
+                                            <input type="text" name="name" class="contact-name">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>전화번호</td>
+                                        <td>
+                                            <input type="text" name="tel" class="contact-tel">
+                                            <span>-</span>
+                                            <input type="text" name="tel" class="contact-tel">
+                                            <span>-</span>
+                                            <input type="text" name="tel" class="contact-tel">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>이메일</td>
+                                        <td>
+                                            <input type="text" name="email" class="contact-email">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>문의내용</td>
+                                        <td>
+                                            <input type="text" name="query" id="contact-query">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>파일첨부</td>
+                                        <td>
+                                            <input type="file" name="photo" id="contact-photo">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+            
+                        <div class="contact-btn">
+                            <button><a href="#">전송</a></button>
+                            <button><a href="#">취소</a></button>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
 
+        <footer id="footer">
+            <div class="footer-info">
+                <p>&copy;All Rights Reserved by <span>design yami</spa></p>
+            </div>
+        </footer>
     </div>
-</section>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>

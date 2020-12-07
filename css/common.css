@@ -1,7 +1,10 @@
 @charset "utf-8";
 /* body {font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Noto Sans KR', sans-serif;} */
+    font-family: 'Noto Sans KR', sans-serif;} 
+    font-family: 'Michroma', sans-serif;
+
+    */
 
 #container { min-height:1000px; }
 .row { max-width:1800px; margin:0 auto}
@@ -23,7 +26,10 @@
     padding:15px 0
 }
 .topNavlogo,  .navBar, .loginMenu { align-self: center;}
-.topNavlogo { width:15%; }
+.topNavlogo { width:15%;}
+.topNavlogo h1 { font-family: 'Libre Barcode 128 Text', cursive; font-size:51px;
+    font-weight: normal; margin-top:4px
+}
 .navBar { width:65%; }
 .loginMenu { width:15%; text-align: right;
     padding-right:30px;
@@ -36,3 +42,9 @@
 .loginMenu ul li{ display:inline-block}
 
 .topNav ul li.on a { color:#32b67a}
+
+
+
+
+
+

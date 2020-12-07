@@ -1,27 +1,50 @@
+
+
+
+
 (function($){
 
-    // 로드 이벤트
-    $('body').on('click','#header .loginMenu a, #content .slide a, .article2 a', function(e){
-        e.preventDefault();
-        var url = $(this).attr('href');
-        $('#container > #content').remove();
-        $('#container').load(url+' #content');
-    })
-
-    $('#header .navBar ul li:nth-child(1) a, #header .navBar ul li:nth-child(2) a, #header .navBar ul li:nth-child(4) a,#header .navBar ul li:nth-child(5) a').on('click',function(e){
-        e.preventDefault();
-        var url = $(this).attr('href');
-        $('#container > #content').remove();
-        $('#container').load(url+' #content');
-    })
-
+    // li 메뉴 클릭하면 색상 변경
     $('.topNav ul li ').on('click',function(){
         $(this).addClass('on').siblings().removeClass('on')
     })
 
+    // 비디오 슬라이드에 현재날짜, 시간 표시하기
 
-   
+    setInterval(function(){
+        var today = new Date();
+
+        var yyyy = today.getFullYear();
+        var mm = today.getMonth()+1;
+        var dd = today.getDate();
+        var hours = today.getHours();
+        var minutes = today.getMinutes();
+        var seconds = today.getSeconds();
+        if(dd<10) {
+            dd='0'+dd
+        }
+        if(mm<10){
+            mm='0'+mm
+        }
+        if (hours<10){
+            hours='0'+hours
+        }
+        if (minutes<10){
+            minutes='0'+minutes
+        }
+        if(seconds<10){
+            seconds='0'+seconds
+        }
+        var today = yyyy+'/'+mm+'/'+dd;
+        var todayHours = hours+':'+minutes+':'+seconds;
+        var elVideo = document.querySelector('.video-txt p:first-child');
+        var elVideo2 = document.querySelector('.video-txt p:last-child');
+        elVideo.innerText = today;
+        elVideo2.innerText = todayHours;
+    },1000)
     
+    
+    // 슬라이드
     $(".slide-inner").slick({            
 
         autoplay: true, // 자동재생
