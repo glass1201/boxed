@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.skillsContent { padding-top:85px;}
+.skillsContent { padding-top:85px; background:#eee;}
 
 .skills-topbg { background:url(../images/skills_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
@@ -14,7 +14,6 @@
     background:#fff; opacity: 0.3;
 }
 
-.skills-row { background:#eee }
 .skills-row2 { background:#fff; }
 .skills-wrap { 
     display:flex; flex-wrap: wrap;

@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-.contactContent { padding-top:85px;}
+.contactContent { padding-top:85px; background:#eee}
 
 .contact-topbg { background:url(../images/contact_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
@@ -15,7 +15,6 @@
     background:#fff; opacity: 0.5;
 }
 
-.contact-row { background:#eee }
 .contact { background:#fff}
 .contact { padding:100px 0 }
 .contact table { width:800px; margin:0 auto;

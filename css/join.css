@@ -1,6 +1,8 @@
 @charset "utf-8";
 
-.joinContent { padding-top:85px; font-family: 'Noto Sans KR', sans-serif;}
+.joinContent { padding-top:85px; font-family: 'Noto Sans KR', sans-serif;
+    background:#32b67a;
+}
 
 .join-topbg { background:url(../images/mypage_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
@@ -14,7 +16,6 @@
     background:#fff; opacity: 0.2;
 }
 
-.join-row { background:#32b67a; }
 .join-wrap { background:#fff;
     padding:100px 0 ;
 }

@@ -1,7 +1,9 @@
 @charset "utf-8";
 
 
-.loginContent { padding-top:85px; font-family: 'Noto Sans KR', sans-serif;}
+.loginContent { padding-top:85px; font-family: 'Noto Sans KR', sans-serif;
+    background:#32b67a;
+}
 
 .login-topbg { background:url(../images/mypage_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
@@ -15,7 +17,6 @@
     background:#fff; opacity: 0.2;
 }
 
-.login-row { background:#32b67a; }
 .login-wrap { background:#fff;
     padding:100px 0 ;
 }
