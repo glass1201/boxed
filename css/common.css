@@ -20,15 +20,15 @@
     z-index:99999999;
 
 }
-.topNavWrap h1 { font-weight:900; font-size:33px; 
-     }
+
 .topNav { display:flex; height:85px;
     padding:15px 0
 }
 .topNavlogo,  .navBar, .loginMenu { align-self: center;}
 .topNavlogo { width:15%;}
 .topNavlogo h1 { font-family: 'Libre Barcode 128 Text', cursive; font-size:51px;
-    font-weight: normal; margin-top:4px
+    font-weight: normal; margin-top:4px;
+    padding-left:20px;
 }
 .navBar { width:65%; }
 .loginMenu { width:15%; text-align: right;
