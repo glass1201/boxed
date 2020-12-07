@@ -35,7 +35,9 @@
 .intro img { width:100%; }
 .intro-txt { margin:auto 0px; padding:0 20px }
 .intro-txt h3 { font-size:44px; padding-bottom:30px; }
-.intro-txt02 p { font-size:22px; color:#666}
+.intro-txt02 p { font-size:22px; color:#666;
+    padding:150px 20px;
+}
 
 /*타이핑*/
 .typing-txt { display:none }
