@@ -32,7 +32,7 @@
 }
 .navBar { width:65%; }
 .loginMenu { width:15%; text-align: right;
-    padding-right:30px;
+    
 }
 .topNav ul li a { display:block; padding: 11px 15px;
     transition:all 0.3s;
