@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="css/rwdcommon.css">
+
+<div class="topNavWrap">
+    <div class="topNav row">
+        <div class="topNavlogo">
+            <h1><a href="index.html">
+                ONONON
+            </a></h1>
+        </div>
+        <div class="rwd-wrap">
+            <div class="navBar">
+                <ul>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="skills.html">SKILLS</a></li>
+                    <li><a href="board.html">BOARD</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="loginMenu">
+                <ul>
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mobile-open mobile">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="mobile-close mobile">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 반응형 햄버거 버튼 열고 닫기
+    $('.mobile-open').on('click',function(){
+        $('.rwd-wrap').slideDown(300)
+        $(this).hide()
+        $(this).next().show()
+    })
+    $('.mobile-close').on('click',function(){
+        $('.rwd-wrap').slideUp(300)
+        $(this).hide()
+        $(this).prev().show()
+    })
+
+</script>

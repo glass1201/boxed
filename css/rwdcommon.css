@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+
+@media screen and ( max-width:1150px ){    
+    /* header 구역 */
+    .topNavWrap {
+        width:100%; 
+        font-family: 'Montserrat', sans-serif;
+        font-size:18px; font-weight:300;
+        background:#fff;
+        position:fixed;  left:0; right:0;
+        z-index:99999999;
+    
+    }
+    .topNav { display:block; height:85px;
+        padding:15px 0; 
+        position: relative;
+    }
+    .topNavlogo,  .navBar, .loginMenu { align-self: center;}
+    .topNavlogo { width:15%;}
+    .topNavlogo h1 { font-family: 'Libre Barcode 128 Text', cursive; font-size:51px;
+        font-weight: normal; margin-top:4px;
+        padding-left:40px;
+    }
+    .rwd-wrap { width:100%; 
+        position: absolute; top:100%;
+        display:none;
+    }
+    .navBar { width:100%; padding-left:0px; 
+        padding:20px 0;
+        text-align: center;
+        padding-bottom:30px;
+        background:#32b67a; color:#fff;
+    }
+    .loginMenu { width:100%; text-align:center;
+        padding:20px 0;
+        background:#fff;
+    }
+    .topNav ul li a { display:block; padding:15px 0;
+        transition:all 0.3s;
+    }
+    .topNav ul li:hover a { color:inherit;}
+    .navBar ul li { display:block; }
+    .loginMenu ul li{ display:block}
+    .topNav ul li.on a { color:#32b67a}
+    
+    /* 모바일 햄버거 버튼 */
+    .mobile {
+        position: absolute; top:50%; right:35px;
+        transform: translateY(-50%);
+        font-size:37px;
+        cursor: pointer;
+    }
+    .mobile-open {  font-size:34px; display:block;
+        
+    }
+    .mobile-close { display:none;
+    }
+
+
+}

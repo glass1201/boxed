@@ -5,11 +5,9 @@
 (function($){
 
 
-    // li 메뉴 클릭하면 색상 변경
-    // $('.topNav ul li ').on('click',function(){
-    //     $(this).addClass('on').siblings().removeClass('on')
-    // })
-
+    // header, footer 로드
+    $('#header').load('header.html')
+    $('#footer').load('footer.html')
     
     // 비디오 슬라이드에 현재날짜, 시간 표시하기
     time();

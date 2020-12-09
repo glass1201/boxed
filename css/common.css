@@ -1,11 +1,11 @@
 @charset "utf-8";
-/* body {font-family: 'Montserrat', sans-serif;
+/*  font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Noto Sans KR', sans-serif;} 
+    font-family: 'Noto Sans KR', sans-serif;
     font-family: 'Michroma', sans-serif;
+*/
 
-    */
-
+/* header 구역 */
 #container { min-height:1000px; }
 .row { max-width:1800px; margin:0 auto}
 .row2 { max-width:1600px; margin:0 auto}
@@ -20,9 +20,9 @@
     z-index:99999999;
 
 }
-
 .topNav { display:flex; height:85px;
-    padding:15px 0
+    padding:15px 0; 
+    position: relative;
 }
 .topNavlogo,  .navBar, .loginMenu { align-self: center;}
 .topNavlogo { width:15%;}
@@ -30,9 +30,9 @@
     font-weight: normal; margin-top:4px;
     padding-left:20px;
 }
-.navBar { width:65%; padding-left:30px;}
-.loginMenu { width:15%; text-align: right;
-    
+.rwd-wrap { width:85%; display:flex; }
+.navBar { width:80%; padding-left:30px;}
+.loginMenu { width:20%; text-align: right;
 }
 .topNav ul li a { display:block; padding: 11px 15px;
     transition:all 0.3s;
@@ -40,8 +40,30 @@
 .topNav ul li:hover a { color:#32b67a;}
 .navBar ul li { display:inline-block; }
 .loginMenu ul li{ display:inline-block}
-
 .topNav ul li.on a { color:#32b67a}
+
+/* 모바일 햄버거 버튼 */
+.mobile {
+    position: absolute; top:50%; right:20px;
+    transform: translateY(-50%);
+    font-size:37px;
+    cursor: pointer;
+}
+.mobile-open {  font-size:38px; display:none;}
+.mobile-close { display:none;}
+
+
+
+
+
+/* footer 구역 */
+#footer { background:#122947;
+    padding:40px 0;
+    text-align:center;
+}
+.footer-info { font-size:14px; color:#aaa; }
+.footer-info span { color:#32b67a}
+
 
 
 

@@ -206,11 +206,4 @@
 .article3.on .addr-addr { animation:fadeInRight 1.5s both 1s}
 .article3.on .addr-tel { animation:fadeInRight 1.5s both 1.5s}
 .article3.on .addr-mail { animation:fadeInRight 1.5s both 2s}
-/* footer */
-#footer { background:#122947;
-    padding:40px 0;
-    text-align:center;
-}
-.footer-info { font-size:14px; color:#aaa; }
-.footer-info span { color:#32b67a}
 
