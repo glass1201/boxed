@@ -8,6 +8,8 @@
     // header, footer 로드
     $('#header').load('header.html')
     $('#footer').load('footer.html')
+
+    
     
     // 비디오 슬라이드에 현재날짜, 시간 표시하기
     time();

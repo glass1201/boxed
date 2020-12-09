@@ -34,7 +34,8 @@
 </div>
 
 <script>
-    // 반응형 햄버거 버튼 열고 닫기
+    (function($){
+        // 반응형 햄버거 버튼 열고 닫기
     $('.mobile-open').on('click',function(){
         $('.rwd-wrap').slideDown(300)
         $(this).hide()
@@ -45,5 +46,27 @@
         $(this).hide()
         $(this).prev().show()
     })
+
+    // 리사이즈 이벤트
+    init();
+    function init() {
+        var ww = $(window).width();
+        if ( ww > 1150 && !$('html').hasClass('pc')){
+            $('html').addClass('pc').removeClass('mobile');
+            $('.rwd-wrap').show();
+            $('.mobile').hide();
+        } else if ( ww<=1150 && !$('html').hasClass('mobile') ){
+            $('html').addClass('mobile').removeClass('pc');
+            $('.mobile-open').show();
+            $('.rwd-wrap, .mobile-close').hide();
+        }
+    }
+    $(window).on('resize',function(){
+        init()
+    })
+
+
+
+    })(jQuery)
 
 </script>
