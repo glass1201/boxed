@@ -9,23 +9,6 @@
     $('#header').load('header.html')
     $('#footer').load('footer.html')
 
-    // 리사이즈 이벤트
-    init();
-    function init() {
-        var ww = $(window).width();
-        if ( ww > 1150 && !$('html').hasClass('pc')){
-            $('html').addClass('pc').removeClass('mobile');
-            $('.rwd-wrap').show();
-            $('.mobile').hide();
-        } else if ( ww<=1150 && !$('html').hasClass('mobile') ){
-            $('html').addClass('mobile').removeClass('pc');
-            $('.mobile-open').show();
-            $('.rwd-wrap, .mobile-close').hide();
-        }
-    }
-    $(window).on('resize',function(){
-        init()
-    })
     
     // 비디오 슬라이드에 현재날짜, 시간 표시하기
     time();

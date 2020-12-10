@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="css/rwdcommon.css">
 
 <div class="topNavWrap">
     <div class="topNav row">
@@ -33,11 +32,13 @@
     </div>
 </div>
 
-<script>
+<script> 
     (function($){
         // 반응형 햄버거 버튼 열고 닫기
     $('.mobile-open').on('click',function(){
-        $('.rwd-wrap').slideDown(300)
+        $('.rwd-wrap').slideDown(300).css({
+            display:'block'
+        })
         $(this).hide()
         $(this).next().show()
     })
@@ -47,6 +48,25 @@
         $(this).prev().show()
     })
 
+    // 리사이즈 이벤트
+    init();
+    function init() {
+        var ww = $(window).width();
+        if ( ww > 1150 && !$('html').hasClass('pc')){
+            $('html').addClass('pc').removeClass('mob');
+            $('.rwd-wrap').show().css({
+                display:'flex'
+            });
+            $('.mobile').hide();
+        } else if ( ww<=1150 && !$('html').hasClass('mob') ){
+            $('html').addClass('mob').removeClass('pc');
+            $('.mobile-open').show();
+            $('.rwd-wrap, .mobile-close').hide();
+        }
+    }
+    $(window).on('resize',function(){
+        init()
+    })
     
 
 
