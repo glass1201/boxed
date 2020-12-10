@@ -29,14 +29,35 @@
 
 
 .intro { display:flex;  flex-wrap: wrap; justify-content: center;
-    padding:130px 0;
+    padding:130px 0; font-family: 'Montserrat', sans-serif;
 }
 .intro > div { width:40%; }
-.intro img { width:100%; }
-.intro-txt { margin:auto 0px; padding:0 20px }
-.intro-txt h3 { font-size:44px; padding-bottom:30px; }
-.intro-txt02 p { font-size:22px; color:#666;
+.intro img { width:100%;}
+.click { position:relative;}
+.click .click-me { position: absolute; top:180px; right:150px;
+    color:#fff; z-index: 9999;
+    animation: flash 2.5s infinite 0s;
 }
+.click .click-me a { font-size:20px;}
+.click .click-me a:before {
+    content:'\f1b0'; font-family:'Font Awesome 5 Free'; font-weight:900 !important;
+    display:block;
+    text-align: center;
+    font-size:62px; color:pink;
+} 
+.intro-txt { margin:auto 0px; padding:0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.intro-txt h3 { font-size:46px; padding-bottom:30px; }
+.intro-txt02 { padding:90px 60px; 
+    opacity:0; transition: all 1s;
+}
+.intro-txt02 p { font-size:28px; padding:15px 0; }
+.intro-txt02.on  { opacity:1 }
+.intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
+
+
+
 
 /*타이핑*/
 .typing-txt { display:none }

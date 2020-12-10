@@ -67,6 +67,12 @@
     $(window).on('resize',function(){
         init()
     })
+
+    // nav li 클릭하면 색상변경
+    $('.topNav ul li').on('click',function(){
+    $(this).addClass('on').siblings().removeClass('on')
+   })
+    
     
 
 

@@ -37,12 +37,22 @@
                                     <p>&nbsp;</p>
                                 </h3>
                             </div>
-                            <div class=intro-img><img src="images/about_me01.jpeg" alt=""></div>
-                            <div class="intro-img"><img src="images/about_me02.jpeg" alt=""></div>
+                            <div class=intro-img>
+                                <img src="images/about_me01.jpeg" alt="">
+                            </div>
+                            <div class="intro-img click">
+                                <img src="images/about_me02.jpeg" alt="">
+                                <div class="click-me">
+                                    <a href="#">CLICK ME!!</a>
+                                </div>
+                            </div>
                             <div class="intro-txt02">
-                                <p>NAME : 온유리</p>
-                                <p>BIRTH : 1992.12.01</p>
-                                <p></p>
+                                <p>NAME : <span>온유리</span></p>
+                                <p>BIRTH : 1992. 12. 01</p>
+                                <p>TEL : 010 - 4900 - 2787</p>
+                                <p>KAKAO : onyouree</p>
+                                <p>EMAIL : glass1201@naver.com</p>
+                                <p>ADDRESS : <span>서울시 강서구 개화동</spa></p>
                             </div>
                         </div>
                     </div>
@@ -126,12 +136,19 @@
 </body>
 
 <script>
-    // about.html
+
+    // 탭메뉴 클릭하면 내용 바뀌기
     $('body').on('click','.about-list ul li a',function(e){
         e.preventDefault();
         var index = $(this).parent().index();
         $(this).parent().addClass('on').siblings().removeClass('on');
         $('.about-info > div').eq(index).show().siblings().hide()
+    })
+
+    // click me
+    $('.click-me').on('click',function(e){
+        e.preventDefault()
+        $('.intro-txt02').addClass('on')
     })
 
     // about 타이핑 효과
@@ -153,5 +170,7 @@
             clearInterval(tyInt);
         }
     }
+
+    
 </script>
 </html>
