@@ -50,10 +50,9 @@
 }
 .intro-txt h3 { font-size:46px; padding-bottom:30px; }
 .intro-txt02 { padding:90px 60px; 
-    opacity:0; transition: all 1s;
+    display:none;
 }
 .intro-txt02 p { font-size:28px; padding:15px 0; }
-.intro-txt02.on  { opacity:1 }
 .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
 
 
