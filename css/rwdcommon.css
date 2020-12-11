@@ -59,3 +59,16 @@
 
 
 }
+
+@media screen and ( max-width:550px ) {
+    /* 모바일 햄버거 버튼 */
+    .mobile {
+        position: absolute; top:50%; right:35px;
+        transform: translateY(-50%);
+        font-size:32px;
+        cursor: pointer;
+    }
+    .mobile-open {  font-size:31px; display:block;
+        
+    }
+}

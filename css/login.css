@@ -4,16 +4,16 @@
 .loginContent { padding-top:85px; font-family: 'Noto Sans KR', sans-serif;
     background:#32b67a;
 }
-
+/* 로그인 백그라운드 */
 .login-topbg { background:url(../images/mypage_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
-    height:500px; position: relative;
+    height:30vw; position: relative;
 }
 .login-topbg h2 { font-size:60px; z-index:9999; color:#000;
     position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
     font-family: 'Montserrat', sans-serif;
 }
-.login-bg-overlay { position: absolute; width:100%; height:500px;
+.login-bg-overlay { position: absolute; width:100%; height:30vw;
     background:#fff; opacity: 0.2;
 }
 
@@ -21,6 +21,7 @@
     padding:100px 0 ;
 }
 
+/* 로그인 폼 박스 */
 .login-form { width:600px; margin:0 auto;
     padding:50px; border:1px solid #ddd; 
 }

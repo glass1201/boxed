@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@media screen and (max-width:1200px){
+    /*조인 백그라운드*/
+   .join-topbg h2 { font-size:53px; z-index:9999; color:#000;
+       position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+       font-family: 'Montserrat', sans-serif;
+   }
+}
+
+@media screen and (max-width:768px){
+    /*조인 백그라운드*/
+   .join-topbg { background:url(../images/mypage_top_bg.png) no-repeat;
+       background-size:cover; background-position: center;
+       height:40vw; position: relative;
+   }
+   .join-topbg h2 { font-size:41px; z-index:9999; color:#000;
+    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+    font-family: 'Montserrat', sans-serif;
+   }
+   .join-bg-overlay { position: absolute; width:100%; height:40vw;
+       background:#fff; opacity: 0.2;
+   }
+   
+   .join-wrap { background:#fff;
+       padding:70px 0 ;
+   }
+   /* 조인 폼박스 */
+   .join-form { width:550px; margin:0 auto;
+       padding:50px; border:1px solid #ddd; 
+   }
+   .join-form h2 { font-size:26px;
+       padding:1px ; margin:0px 15px 40px; 
+       border-bottom:2px solid #32b67a;
+       display:inline-block;
+   }
+   
+   .join-form table { padding:25px 0;  }
+   .join-form table tr td:first-child { width:100%; display:block;
+    font-size:16px; }
+   .join-form table tr td:last-child { width:100%; display:block }
+   .join-form table input { width:90%; height:50px;
+       border:1px solid #ddd;
+       background:#f6f6f6;
+       margin:8px auto;
+       text-indent:0.7em; 
+   }
+   .join-form table tr:first-child td:last-child input{ width:60%; display:inline-block}
+   .join-form table button.idcheck {
+       width:110px; height:50px; 
+       margin-left:5px;
+       background:#32b67a; color:#fff;
+       vertical-align: middle;
+   }
+   .join-form ::placeholder { font-size:14px; }
+   
+   .join-btn { text-align: center; }
+   .join-btn button { background:#32b67a; color:#fff;
+       width:200px; height:50px; 
+       font-size:15px; font-weight: 400;
+       transition:all 0.3s;
+       cursor: pointer;
+       margin:
+       30px 0 10px;
+   }
+   .join-btn button:hover { background:#fff; color:#32b67a;
+       border : 1px solid #32b67a;
+   }
+
+
+}
+
+@media screen and (max-width:605px) {
+   /*조인 백그라운드*/
+   .join-topbg { background:url(../images/mypage_top_bg.png) no-repeat;
+    background-size:cover; background-position: center;
+    height:40vw; position: relative;
+   }
+   .join-topbg h2 { font-size:36px; z-index:9999; color:#000;
+    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+    font-family: 'Montserrat', sans-serif;
+   }
+   .join-bg-overlay { position: absolute; width:100%; height:40vw;
+       background:#fff; opacity: 0.2;
+   }
+   .join-wrap { background:#fff;
+       padding:70px 0 ;
+   }
+
+    /* 조인 폼박스 */
+    .join-form { width:450px; margin:0 auto;
+        padding:50px; border:1px solid #ddd; 
+    }
+    .join-form h2 { font-size:24px;
+        padding:1px ; margin:0px 15px 40px; 
+        border-bottom:2px solid #32b67a;
+        display:inline-block;
+    }
+    
+    .join-form table { padding:25px 0;  }
+    .join-form table tr td:first-child { width:100%; display:block;
+     font-size:14px; }
+    .join-form table tr td:last-child { width:100%; display:block }
+    .join-form table input { width:90%; height:40px;
+        border:1px solid #ddd;
+        background:#f6f6f6;
+        margin:8px auto;
+        text-indent:0.7em; 
+    }
+    .join-form table tr:first-child td:last-child input{ width:60%; display:inline-block}
+    .join-form table button.idcheck {
+        width:110px; height:40px; 
+        margin-left:5px;
+        background:#32b67a; color:#fff;
+        vertical-align: middle;
+    }
+    .join-form ::placeholder { font-size:13px; }
+    
+    .join-btn { text-align: center; }
+    .join-btn button { background:#32b67a; color:#fff;
+        width:170px; height:40px; 
+        font-size:15px; font-weight: 400;
+        transition:all 0.3s;
+        cursor: pointer;
+        margin:
+        30px 0 10px;
+    }
+    .join-btn button:hover { background:#fff; color:#32b67a;
+        border : 1px solid #32b67a;
+    }
+   
+
+}
+
+@media screen and (max-width:405px) {
+     /*조인 백그라운드*/
+   .join-topbg { background:url(../images/mypage_top_bg.png) no-repeat;
+    background-size:cover; background-position: center;
+    height:40vw; position: relative;
+   }
+   .join-topbg h2 { font-size:26px; z-index:9999; color:#000;
+    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+    font-family: 'Montserrat', sans-serif;
+   }
+   .join-bg-overlay { position: absolute; width:100%; height:40vw;
+       background:#fff; opacity: 0.2;
+   }
+   .join-wrap { background:#fff;
+       padding:70px 0 ;
+   }
+    /* 조인 폼박스 */
+    .join-form { width:320px; margin:0 auto;
+        padding:50px; border:1px solid #ddd; 
+    }
+    .join-form h2 { font-size:18px;
+        padding:1px ; margin:0px 0px 25px; 
+        border-bottom:2px solid #32b67a;
+        display:inline-block;
+    }
+    
+    .join-form table { padding:25px 0;  }
+    .join-form table tr td:first-child { width:100%; display:block;
+     font-size:12px; }
+    .join-form table tr td:last-child { width:100%; display:block }
+    .join-form table input { width:100%; height:40px;
+        border:1px solid #ddd;
+        background:#f6f6f6;
+        margin:8px auto;
+        text-indent:0.7em; 
+    }
+    .join-form table tr:first-child td:last-child input{ width:100%; display:block}
+    .join-form table button.idcheck {
+        width:80px; height:30px; 
+        margin-left:0px; margin-bottom:5px; 
+        background:#32b67a; color:#fff;
+        vertical-align: middle; font-size:11px;
+    }
+    .join-form ::placeholder { font-size:11px; }
+    
+    .join-btn { text-align: center; }
+    .join-btn button { background:#32b67a; color:#fff;
+        width:100px; height:40px; 
+        font-size:11px; font-weight: 400;
+        transition:all 0.3s;
+        cursor: pointer;
+        margin:10px 0px;
+    }
+    .join-btn button:hover { background:#fff; color:#32b67a;
+        border : 1px solid #32b67a;
+    }
+   
+
+
+}

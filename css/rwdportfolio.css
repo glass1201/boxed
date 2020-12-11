@@ -1,0 +1,194 @@
+@charset "utf-8";
+
+@media screen and (max-width:1200px){
+    /* 포폴 백그라운드 */
+    .pf-topbg h2 { font-size:53px; z-index:9999; color:#000;
+        position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media screen and (max-width:950px) {
+    
+   /* 포폴 이미지, 설명 리스트 */
+    .pf-list-section { padding:50px 0 100px; display:flex; flex-wrap:wrap;
+        justify-content: center;
+    }
+    .pf-list-section > div { width: 45%; margin:5% 1%;}
+    .pf-list-section img { border-radius:15px; border:2px solid #ddd;
+        height:auto;
+    }
+    
+    .pf-overlay-wrap { position: relative;  }
+    .pf-overlay { position: absolute; top:0; left:0; bottom:0; right:0;
+         background:rgba(0,0,0,0.5);
+         border-radius:15px;
+         overflow: hidden; 
+         opacity:0;
+         transition: all 0.5s;
+    }
+    .pf-overlay i { font-size:200px; color:rgba(255,255,255,0.5);
+        position: absolute; left:-160px; bottom:-35px;
+        transition: all 0.7s;
+    }
+    .pf-overlay-wrap:hover .pf-overlay { opacity: 1;}
+    .pf-overlay-wrap:hover i {
+        position: absolute; left:300px;
+    }
+    .pf-txt { margin-left: 8px;}
+    .pf-txt h2 { font-size:20px; font-weight:500;
+        color:#222;
+        padding:25px 0 15px;}
+    .pf-txt span { font-size: 18px; font-family: 'Noto Sans KR', sans-serif;
+        padding-left:5px; 
+    }
+    .pf-txt p { font-size:17px; color:#555;}
+    .pf-txt p+p { padding-top:10px;}
+    .pf-txt p:last-child { line-height:1.7; }
+    .pf-txt p:last-child span { font-size: 16px; 
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400 ;
+    }
+    .pf-txt a { text-decoration: underline; }
+}
+
+@media screen and (max-width:768px) {
+    /* 포폴 백그라운드 */
+   .pf-topbg { background:url(../images/portfolio_top_bg.png) no-repeat;
+       background-size:cover; background-position: center;
+       height:40vw; position: relative;
+   }
+   .pf-topbg h2 { font-size:41px; z-index:9999; color:#000;
+       position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+       font-family: 'Montserrat', sans-serif;
+   }
+   .pf-bg-overlay { position: absolute; width:100%; height:40vw;
+       background:#fff; opacity: 0.6;
+   }
+   /* 이동 설명 글 */
+   .pf > p { text-align: center;
+       color:#aaa; padding-top:65px; 
+       font-family: 'Noto Sans KR', sans-serif;
+       font-size:15px 
+   }
+   /* 포폴 이미지, 설명 리스트 */
+   .pf-list-section { padding:30px 0 70px; display:block; flex-wrap:wrap;
+    justify-content: center;
+   }
+   .pf-list-section > div { width: 80%; margin:5% auto;}
+   .pf-list-section img { border-radius:15px; border:2px solid #ddd;
+       height:auto;
+   }
+   
+   .pf-overlay-wrap { position: relative;  }
+   .pf-overlay { position: absolute; top:0; left:0; bottom:0; right:0;
+        background:rgba(0,0,0,0.5);
+        border-radius:15px;
+        overflow: hidden; 
+        opacity:0;
+        transition: all 0.5s;
+   }
+   .pf-overlay i { font-size:200px; color:rgba(255,255,255,0.5);
+       position: absolute; left:-160px; bottom:-35px;
+       transition: all 0.7s;
+   }
+   .pf-overlay-wrap:hover .pf-overlay { opacity: 1;}
+   .pf-overlay-wrap:hover i {
+       position: absolute; left:300px;
+   }
+   .pf-txt { margin-left: 8px;}
+   .pf-txt h2 { font-size:17px; font-weight:500;
+       color:#222;
+       padding:25px 0 15px;}
+   .pf-txt span { font-size: 16px; font-family: 'Noto Sans KR', sans-serif;
+       padding-left:5px; 
+   }
+   .pf-txt p { font-size:16px; color:#555;}
+   .pf-txt p+p { padding-top:10px;}
+   .pf-txt p:last-child { line-height:1.7; }
+   .pf-txt p:last-child span { font-size: 15px; 
+       font-family: 'Noto Sans KR', sans-serif;
+       font-weight: 400 ;
+   }
+   .pf-txt a { text-decoration: underline; }
+
+}
+
+@media screen and (max-width:605px) {
+    /* 포폴 백그라운드 */
+   .pf-topbg h2 { font-size:36px; z-index:9999; color:#000;
+       position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+       font-family: 'Montserrat', sans-serif;
+   }
+  
+}
+
+@media screen and (max-width:320px) {
+    /* 포폴 백그라운드 */
+   .pf-topbg { background:url(../images/portfolio_top_bg.png) no-repeat;
+    background-size:cover; background-position: center;
+    height:50vw; position: relative;
+   }
+   .pf-topbg h2 { font-size:26px; z-index:9999; color:#000;
+       position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+       font-family: 'Montserrat', sans-serif;
+   }
+   .pf-bg-overlay { position: absolute; width:100%; height:50vw;
+       background:#fff; opacity: 0.6;
+   }
+   /* 이동 설명 글 */
+   .pf > p { text-align: center;
+    color:#aaa; padding:65px 20px 0; 
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:13px 
+   }
+   /* 포폴 이미지, 설명 리스트 */
+   .pf-list-section { padding:30px 0 70px; display:block; flex-wrap:wrap;
+    justify-content: center;
+   }
+   .pf-list-section > div { width: 80%; margin:5% auto;}
+   .pf-list-section img { border-radius:15px; border:2px solid #ddd;
+       height:auto;
+   }
+   
+   .pf-overlay-wrap { position: relative;  }
+   .pf-overlay { position: absolute; top:0; left:0; bottom:0; right:0;
+        background:rgba(0,0,0,0.5);
+        border-radius:15px;
+        overflow: hidden; 
+        opacity:0;
+        transition: all 0.5s;
+   }
+   .pf-overlay i { font-size:200px; color:rgba(255,255,255,0.5);
+       position: absolute; left:-160px; bottom:-35px;
+       transition: all 0.7s;
+   }
+   .pf-overlay-wrap:hover .pf-overlay { opacity: 1;}
+   .pf-overlay-wrap:hover i {
+       position: absolute; left:300px;
+   }
+   .pf-txt { margin-left: 8px;}
+   .pf-txt h2 { font-size:15px; font-weight:500;
+       color:#222;
+       padding:25px 0 15px;}
+   .pf-txt span { font-size: 14px; font-family: 'Noto Sans KR', sans-serif;
+       padding-left:5px; 
+   }
+   .pf-txt p { font-size:14px; color:#555;}
+   .pf-txt p+p { padding-top:10px;}
+   .pf-txt p:last-child { line-height:1.7; }
+   .pf-txt p:last-child span { font-size: 14px; 
+       font-family: 'Noto Sans KR', sans-serif;
+       font-weight: 400 ;
+   }
+   .pf-txt a { text-decoration: underline; }
+   /* 포폴 컬러 테마 */
+   .color { display:flex; padding:10px 0 }
+   .color div:nth-child(1) { font-size:14px; color:#555;
+       margin-right:9px;
+   }
+   .color div:nth-child(2), .color div:nth-child(3), .color div:nth-child(4) { 
+       width:15px; height:15px;
+       margin-right:5px; border:1.5px solid #000;
+   }
+}
