@@ -114,14 +114,11 @@
     /* 비디오 재생 */
     $('.article1-img > a').on('click',function(e){
         e.preventDefault();
-        var href = $(this).attr('href')
-        $('.video-outer').show()
-        $('.video-inner iframe').attr('src', href)
+        $('.video-outer').fadeIn(300)
     })
     $('.video-close').on('click',function(e){
         e.preventDefault()
-        $('.video-outer').hide();
-        $('.video-inner iframe').attr('src','')
+        $('.video-outer').fadeOut(300);
     })
 
     
