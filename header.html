@@ -47,6 +47,12 @@
         $(this).hide()
         $(this).prev().show()
     })
+    
+     // nav li 불켜기
+     $('.rwd-wrap ul li a').on('click',function(){
+         $(this).parent().addClass('on').siblings().removeClass('on')
+     })
+     
 
     // 리사이즈 이벤트
     init();

@@ -64,6 +64,15 @@
 }
 .pf-txt a { text-decoration: underline; }
 
+.color { display:flex; padding:10px 0 }
+   .color div:nth-child(1) { font-size:18px; color:#555;
+       margin-right:9px;
+   }
+   .color div:nth-child(2), .color div:nth-child(3), .color div:nth-child(4) { 
+       width:20px; height:20px;
+       margin-right:10px; border:1.5px solid #000;
+   }
+
 .color01 div:nth-child(2) { background:#32b67a}
 .color01 div:nth-child(3) { background:#122947}
 .color01 div:nth-child(4) { background:#ddd}

@@ -40,7 +40,7 @@
 .topNav ul li:hover a { color:#32b67a;}
 .navBar ul li { display:inline-block; }
 .loginMenu ul li{ display:inline-block}
-.topNav ul li.on a { color:#32b67a}
+.rwd-wrap ul li.on a { color:#32b67a}
 
 /* 모바일 햄버거 버튼 */
 .mobile {
