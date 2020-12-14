@@ -2,6 +2,7 @@
 
 .aboutContent { padding-top:85px;}
 
+/* 어바웃 백그라운드 */
 .about-topbg { background:url(../images/about_top_bg.png) no-repeat;
     background-size:cover; background-position: center;
     height:30vw; position: relative;
@@ -14,12 +15,13 @@
     background:#fff; opacity: 0.5;
 }
 
+/* 어바웃 리스트 */
 .about-list-wrap { position: relative;}
-.about-list { position: absolute; top:-57px; left:50%; transform: translateX(-50%); 
+.about-list { position: absolute; bottom:100%; left:50%; transform: translateX(-50%); 
 }
 .about-list ul { text-align: center;}
 .about-list ul li {display:inline-block; margin:-2px;}
-.about-list ul li a { font-size:28px; width:270px; display:block;
+.about-list ul li a { width:270px; display:block;
     background:rgba(0,0,0,0.3); color:#fff;
     padding:15px; font-size:22px;
 }
@@ -27,6 +29,7 @@
     font-weight:bold;
 }
 
+/* 인트로*/
 .intro { display:flex;  flex-wrap: wrap; justify-content: center;
     padding:130px 0; font-family: 'Montserrat', sans-serif;
 }
@@ -47,20 +50,17 @@
 .intro-txt { margin:auto 0px; padding:0 20px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-.intro-txt h3 { font-size:46px; padding-bottom:30px; }
-.intro-txt02 { padding:90px 60px; 
+.intro-txt h3 { font-size:43px; padding-bottom:30px; }
+.intro-txt02 { padding:100px 0 0 60px;
     opacity: 0; transition: all 0.5s;
 }
-.intro-txt02.on { padding:90px 60px; 
-    opacity: 1; 
+.intro-txt02.on { 
+    opacity: 1; padding:60px;
 }
-.intro-txt02 p { font-size:28px; padding:15px 0; }
+.intro-txt02 p { font-size:28px; padding:10px 0; }
 .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
 
-
-
-
-/*타이핑*/
+/* 인트로 타이핑 텍스트 */
 .typing-txt { display:none }
 .typing p { display:inline-block;
     animation-name: cursor;
@@ -73,6 +73,7 @@
     100% { border-right:1px solid #fff; }
 }
 
+/* 히스토리 */
 .history-wrap { background:#32b67a;
     position: relative;
     display:none;

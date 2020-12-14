@@ -1,3 +1,256 @@
 @charset "utf-8";
 
-@media screen and (max-width:1200px) {}
+@media screen and (max-width:1250px) {
+    /* 어바웃 백그라운드 */
+    .about-topbg h2 { font-size:53px; z-index:9999; color:#000;
+        position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* 어바웃 리스트 */
+   .about-list-wrap { position: relative;}
+   .about-list { position: absolute; bottom:100%; left:50%; transform: translateX(-50%); 
+   }
+   .about-list ul { text-align: center;}
+   .about-list ul li {display:inline-block; margin:-2px; }
+   .about-list ul li a { font-size:18px;  display:block;
+       background:rgba(0,0,0,0.3); color:#fff;
+       padding:15px 40px;  width:100%;
+   }
+   .about-list ul li.on a { background:#fff; color:#000;
+       font-weight:bold;
+   }
+   /* 인트로*/
+   .intro { display:flex;  flex-wrap: wrap; justify-content: center;
+       padding:130px 0; font-family: 'Montserrat', sans-serif;
+   }
+   .intro > div { width:40%; }
+   .intro img { width:100%;}
+   .click { position:relative; }
+   .click .click-me { position: absolute; top:100px; right:100px;
+       color:#fff; z-index: 9999;
+       animation: flash 2.5s infinite 0s;
+   }
+   .click .click-me a { font-size:18px;}
+   .click .click-me a:before {
+       content:'\f1b0'; font-family:'Font Awesome 5 Free'; font-weight:900 !important;
+       display:block;
+       text-align: center;
+       font-size:60px; color:pink;
+   } 
+   .intro-txt { margin:auto 0px; padding:0 20px;
+       font-family: 'Noto Sans KR', sans-serif;
+   }
+   .intro-txt h3 { font-size:36px; padding-bottom:30px; }
+   .intro-txt02 { 
+       opacity: 0; transition: all 0.5s; padding:40px;
+   }
+   .intro-txt02.on { 
+       opacity: 1; padding:40px;
+   }
+   .intro-txt02 p { font-size:22px; padding:10px 0; }
+   .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
+
+}
+
+@media screen and (max-width:1000px) {
+    /* 인트로*/
+   .intro { display:flex;  flex-wrap: wrap; justify-content: center;
+    padding:130px 0; font-family: 'Montserrat', sans-serif;
+   }
+   .intro > div { width:40%; }
+   .intro img { width:100%;}
+   .click { position:relative; }
+   .click .click-me { position: absolute; top:70px; right:80px;
+       color:#fff; z-index: 9999;
+       animation: flash 2.5s infinite 0s;
+   }
+   .click .click-me a { font-size:16px;}
+   .click .click-me a:before {
+       content:'\f1b0'; font-family:'Font Awesome 5 Free'; font-weight:900 !important;
+       display:block;
+       text-align: center;
+       font-size:57px; color:pink;
+   } 
+   .intro-txt { margin:auto 0px; padding:0 20px;
+       font-family: 'Noto Sans KR', sans-serif;
+   }
+   .intro-txt h3 { font-size:34px; padding-bottom:30px; }
+   .intro-txt02 { 
+       opacity: 0; transition: all 0.5s; padding:30px;
+   }
+   .intro-txt02.on { 
+       opacity: 1; padding:30px;
+   }
+   .intro-txt02 p { font-size:20px; padding:8px 0; }
+   .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
+}
+
+@media screen and (max-width:800px) {
+    /* 어바웃 백그라운드 */
+   .about-topbg { background:url(../images/about_top_bg.png) no-repeat;
+       background-size:cover; background-position: center;
+       height:40vw; position: relative;
+   }
+   .about-topbg h2 { font-size:41px; z-index:9999; color:#000;
+       position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+       font-family: 'Montserrat', sans-serif;
+   }
+   .about-bg-overlay { position: absolute; width:100%; height:40vw;
+       background:#fff; opacity: 0.5;
+   }
+   /* 인트로*/
+   .intro { display:flex;  flex-wrap: wrap; justify-content: center;
+    padding:130px 0; font-family: 'Montserrat', sans-serif;
+   }
+   .intro > div { width:85%; }
+   .intro img { width:100%;}
+   .click { position:relative; }
+   .click .click-me { position: absolute; top:70px; right:80px;
+       color:#fff; z-index: 9999;
+       animation: flash 2.5s infinite 0s;
+   }
+   .click .click-me a { font-size:16px;}
+   .click .click-me a:before {
+       content:'\f1b0'; font-family:'Font Awesome 5 Free'; font-weight:900 !important;
+       display:block;
+       text-align: center;
+       font-size:57px; color:pink;
+   } 
+   .intro-txt { margin:auto 0px; padding:100px 20px 70px;
+       font-family: 'Noto Sans KR', sans-serif;
+       background:#333; color:#fff;
+   }
+   .intro-txt h3 { font-size:32px; padding-bottom:30px; }
+   .intro-txt02 { 
+       opacity: 0; transition: all 0.5s; padding:90px 30px 100px;
+       background:#333; 
+       color:#fff;
+   }
+   .intro-txt02.on { 
+       opacity: 1; padding:90px 30px 100px;
+   }
+   .intro-txt02 p { font-size:22px; padding:10px 0; }
+   .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
+}
+
+@media screen and (max-width:620px) {
+     /* 어바웃 백그라운드 */
+   .about-topbg { background:url(../images/about_top_bg.png) no-repeat;
+    background-size:cover; background-position: center;
+    height:40vw; position: relative;
+   }
+   .about-topbg h2 { font-size:36px; z-index:9999; color:#000;
+       position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+       font-family: 'Montserrat', sans-serif;
+   }
+   .about-bg-overlay { position: absolute; width:100%; height:40vw;
+       background:#fff; opacity: 0.5;
+   }
+    /* 어바웃 리스트 */
+    .about-list-wrap { position: relative;}
+    .about-list { position: absolute; bottom:100%; left:50%; transform: translateX(-50%); 
+    }
+    .about-list ul { text-align: center;}
+    .about-list ul li {display:inline-block; margin:-2px; }
+    .about-list ul li a { font-size:15px;  display:block;
+        background:rgba(0,0,0,0.3); color:#fff;
+        padding:10px 20px;  width:100%;
+    }
+    .about-list ul li.on a { background:#fff; color:#000;
+        font-weight:bold;
+    }
+    /* 인트로*/
+   .intro { display:flex;  flex-wrap: wrap; justify-content: center;
+    padding:70px 0;; font-family: 'Montserrat', sans-serif;
+   }
+   .intro > div { width:85%; }
+   .intro img { width:100%;}
+   .click { position:relative; }
+   .click .click-me { position: absolute; top:70px; right:80px;
+       color:#fff; z-index: 9999;
+       animation: flash 2.5s infinite 0s;
+   }
+   .click .click-me a { font-size:15px;}
+   .click .click-me a:before {
+       content:'\f1b0'; font-family:'Font Awesome 5 Free'; font-weight:900 !important;
+       display:block;
+       text-align: center;
+       font-size:50px; color:pink;
+   } 
+   .intro-txt { margin:auto 0px; padding:100px 20px 70px;
+       font-family: 'Noto Sans KR', sans-serif;
+       background:#333; color:#fff;
+   }
+   .intro-txt h3 { font-size:25px; padding-bottom:30px; }
+   .intro-txt02 { 
+       opacity: 0; transition: all 0.5s; padding:70px 30px 80px;
+       background:#333;color:#fff;
+   }
+   .intro-txt02.on { 
+       opacity: 1; padding:70px 30px 80px;
+       
+   }
+   .intro-txt02 p { font-size:19px; padding:10px 0; }
+   .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
+}
+
+@media screen and (max-width:400px) {
+     /* 어바웃 백그라운드 */
+   .about-topbg { background:url(../images/about_top_bg.png) no-repeat;
+    background-size:cover; background-position: center;
+    height:50vw; position: relative;
+   }
+   .about-topbg h2 { font-size:33px; z-index:9999; color:#000;
+       position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);
+       font-family: 'Montserrat', sans-serif;
+   }
+   .about-bg-overlay { position: absolute; width:100%; height:50vw;
+       background:#fff; opacity: 0.5;
+   }
+   /* 어바웃 리스트 */
+   .about-list-wrap { position: relative;}
+   .about-list { position: absolute; bottom:100%; left:50%; transform: translateX(-50%); 
+   }
+   .about-list ul { text-align: center;}
+   .about-list ul li {display:inline-block; margin:-2px; }
+   .about-list ul li a { font-size:14px;  display:block;
+       background:rgba(0,0,0,0.3); color:#fff;
+       padding:10px;  width:100%;
+   }
+   .about-list ul li.on a { background:#fff; color:#000;
+       font-weight:bold;
+   }
+   /* 인트로*/
+   .intro { display:flex;  flex-wrap: wrap; justify-content: center;
+    padding:70px 0; font-family: 'Montserrat', sans-serif;
+   }
+   .intro > div { width:85%; }
+   .intro img { width:100%;}
+   .click { position:relative; }
+   .click .click-me { position: absolute; top:50px; right:60px;
+       color:#fff; z-index: 9999;
+       animation: flash 2.5s infinite 0s;
+   }
+   .click .click-me a { font-size:13px;}
+   .click .click-me a:before {
+       content:'\f1b0'; font-family:'Font Awesome 5 Free'; font-weight:900 !important;
+       display:block;
+       text-align: center;
+       font-size:46px; color:pink;
+   } 
+   .intro-txt { margin:auto 0px; padding:100px 20px 70px;
+       font-family: 'Noto Sans KR', sans-serif;
+       background:#333; color:#fff;
+   }
+   .intro-txt h3 { font-size:23px; padding-bottom:30px; }
+   .intro-txt02 { 
+       opacity: 0; transition: all 0.5s; padding:60px 30px 70px;
+       background:#333;color:#fff;
+   }
+   .intro-txt02.on { 
+       opacity: 1; padding:60px 30px 70px;
+       
+   }
+   .intro-txt02 p { font-size:16px; padding:10px 0; }
+   .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
+}
