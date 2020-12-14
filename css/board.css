@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 .boardContent { padding-top:85px; }
+
+/* 보드 백그라운드 */
 .board-topbg { background:url(../images/board_top_bg.png) no-repeat;
     background-size:cover; background-position:center;
     height:30vw; position: relative;
@@ -13,8 +15,10 @@
     background:#fff; opacity: 0.3;
 }
 
-
-.board-table { padding:80px 0; font-family: 'Noto Sans KR', sans-serif;}
+/* 보드 테이블 박스 */
+.board-table { padding:80px 0; font-family: 'Noto Sans KR', sans-serif;
+    width:100%
+}
 .board-table colgroup col:nth-child(1) { width: 10%}
 .board-table colgroup col:nth-child(2) { width: auto; text-align:left }
 .board-table colgroup col:nth-child(3) { width: 15%}

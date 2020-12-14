@@ -106,7 +106,7 @@
    .slide-txt h3 { font-size:33px; font-family: 'Montserrat', sans-serif;
        padding:5px 0;
    }
-   .slide-txt span { border-bottom:none; padding:5px 0 }
+   .slide-txt span { border-bottom:3px solid #32b67a; padding:5px 0 }
    .slide-txt p { font-size:18px; padding:30px 0 50px}
    .slide-txt a { 
        padding: 18px 50px;
@@ -245,7 +245,7 @@
        .slide-txt h3 { font-size:33px; font-family: 'Montserrat', sans-serif;
            padding:5px 0;
        }
-       .slide-txt span { border-bottom:none; padding:5px 0 }
+       .slide-txt span { border-bottom:3px solid #32b67a; padding:5px 0 }
        .slide-txt p { font-size:18px; padding:30px 0 50px}
        .slide-txt a { 
            padding: 18px 50px;
@@ -490,7 +490,7 @@
    .slide-txt h3 { font-size:26px; font-family: 'Montserrat', sans-serif;
        padding:5px 0;
    }
-   .slide-txt span { border-bottom:none; padding:5px 0 }
+   .slide-txt span { border-bottom:3px solid #32b67a; padding:5px 0 }
    .slide-txt p { font-size:16px; padding:30px 0 50px}
    .slide-txt a { 
        padding: 18px 50px;
@@ -568,7 +568,7 @@
    .slide-txt h3 { font-size:25px; font-family: 'Montserrat', sans-serif;
        padding:5px 0;
    }
-   .slide-txt span { border-bottom:none; padding:5px 0 }
+   .slide-txt span { border-bottom:3px solid #32b67a; padding:5px 0 }
    .slide-txt p { font-size:15px; padding:30px 0 50px}
    .slide-txt a { 
        padding: 18px 50px;

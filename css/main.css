@@ -35,7 +35,7 @@
     padding:55px 0;
 }
 .slide-txt h3 { font-size:40px; font-family: 'Montserrat', sans-serif;
-    padding:5px 0;
+    padding:5px 0; line-height: 1.5;
 }
 .slide-txt span { border-bottom:3px solid #32b67a; padding:5px 0 }
 .slide-txt p { font-size:18px; padding:55px 0 80px}
@@ -44,7 +44,9 @@
     font-size:15px; font-weight: bold;
     background:#32b67a; color:#fff;
     border-radius: 10px;
+    transition:all 0.5s;
 }
+.slide-txt a:hover { background:#fff; color:#32b67a; border:1px solid #32b67a}
 .slide-outer .slick-dots {
     position: absolute;
     bottom:0px; left:50%;

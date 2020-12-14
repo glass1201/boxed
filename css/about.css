@@ -27,13 +27,12 @@
     font-weight:bold;
 }
 
-
 .intro { display:flex;  flex-wrap: wrap; justify-content: center;
     padding:130px 0; font-family: 'Montserrat', sans-serif;
 }
 .intro > div { width:40%; }
 .intro img { width:100%;}
-.click { position:relative;}
+.click { position:relative; }
 .click .click-me { position: absolute; top:180px; right:150px;
     color:#fff; z-index: 9999;
     animation: flash 2.5s infinite 0s;
@@ -50,7 +49,10 @@
 }
 .intro-txt h3 { font-size:46px; padding-bottom:30px; }
 .intro-txt02 { padding:90px 60px; 
-    display:none;
+    opacity: 0; transition: all 0.5s;
+}
+.intro-txt02.on { padding:90px 60px; 
+    opacity: 1; 
 }
 .intro-txt02 p { font-size:28px; padding:15px 0; }
 .intro-txt02 span { font-family: 'Noto Sans KR', sans-serif; }
