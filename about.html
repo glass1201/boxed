@@ -9,6 +9,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="js/slick.min.js"></script>
 </head>
+
 <body>
     <div id="wrap">
         <header id="header"></header>
@@ -132,10 +133,19 @@
 
 
 
+
+
     <script src="js/index.js"></script>
 </body>
 
 <script>
+    
+    // li 에 불 켜기
+    $(window).load(
+        function(){
+            $('body .rwd-wrap ul li').eq(0).addClass('on')
+        }
+    )
 
     // 탭메뉴 클릭하면 내용 바뀌기
     $('body').on('click','.about-list ul li a',function(e){
