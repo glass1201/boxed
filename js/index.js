@@ -120,8 +120,7 @@
         e.preventDefault()
         $('.video-outer').fadeOut(300);
     })
-
-    
+ 
 
 
     

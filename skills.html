@@ -60,6 +60,12 @@
 
     <script src="js/index.js"></script>
     <script>
+        // li 에 불 켜기
+        $(window).load(
+            function(){
+                $('body .rwd-wrap ul li').eq(2).addClass('on')
+            }
+        )
         // 차트
         $(window).ready(function(){
             draw(90, '.pie-chart1', '#32b67a');
@@ -96,6 +102,7 @@
     
     </script>
 </body>
+
 
 
 </html>
